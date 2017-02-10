@@ -1,0 +1,112 @@
+@import "compass";
+@import "theme_variables";
+
+/* Block newsletter */
+#columns #newsletter_block_left {
+	.form-group {
+		margin-bottom: 0;
+		.form-control {
+			max-width: 222px;
+			display: inline-block;
+			margin-right: 6px;
+			@media (min-width: $screen-sm) and (max-width: $screen-md-max) { // min 768px max 1199px
+				margin-bottom: 10px;
+				margin-right: 0;
+			}
+		}
+	}
+	.success_inline, .warning_inline {
+		text-align: left;
+		padding: 1px 0 0 0;
+		margin-bottom: -19px;
+	}
+	.success_inline	{
+		color: #418B19;
+	}
+	.warning_inline {
+		color: #f13340;
+	}
+}
+/* Block newsletter footer */
+#footer {
+	#newsletter_block_left {
+		
+		overflow: hidden;
+		padding: 100px 0;
+		margin-bottom: 0;
+		@media (max-width: $screen-xs-max) { // max 767px
+			width: 100%;
+			padding:50px 0;
+		}
+		h5{text-align:center; font-size:12px; color:#333; text-align:center; text-transform:uppercase;}
+		h4 {
+			background: none;
+			padding: 7px 16px 5px 0;
+			text-transform: none;
+			 text-align:center;
+			font-size: 30px;
+			line-height: 25px;
+			text-transform:uppercase;
+			font-family:$font-fat;
+			color:#333;
+			border: none;
+			&:after {
+				display: none;
+			}
+		}
+		.block_content {
+			overflow: hidden;
+		}
+		.form-group {
+			margin-bottom: 0;
+			.form-control {
+				
+				background: #ffff;
+				border:solid 2px #fff;
+				color: #333;
+				height: 45px;
+				max-width: 267px;
+				padding: 10px 43px 10px 12px;
+				display: block;
+				margin:0 auto;
+				float: none;
+				&:focus {
+					@include box-shadow(black 0px 0px 0px);
+				}
+			}
+			.button-small {
+				height: 45px;
+				width: 300px;
+				margin:10px auto 0 auto;
+				
+				display:block;
+				padding: 10px 43px 10px 43px;
+				border:solid 2px #fff;
+				background:$primary-color;
+				font-size:14px;
+				color:#333;
+				text-align:center;
+				text-transform:uppercase;
+				span{padding:0px; border:none; text-shadow:none}
+			}
+		}
+		.warning_inline {
+			display: block;
+			color: #f13340;
+			font-size: 13px;
+			line-height :26px;
+			clear: both;
+			@media (min-width: $screen-lg) { // min 1200px
+				display: inline-block;
+				position: relative;
+				top: -35px;
+				margin-bottom: -35px;
+				left: 15px;
+				clear: none;
+			}
+		}
+		.newsletter-input {
+  			max-width: 300px !important;
+  		}
+	}
+}
