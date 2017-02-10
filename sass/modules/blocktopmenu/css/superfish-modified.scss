@@ -31,7 +31,7 @@
 	position: absolute;
 	top: -999em;
 	background:#000;
-	border:solid 2px $primary-color;
+	border:solid 2px $SB_yellow-background;
 	@media (max-width: $screen-xs-max) { // max 767px
 		position: relative;
 	}
@@ -73,7 +73,7 @@
 		}
 	}
 	> a {
-		font: 600 12px/22px arial;
+		font: 600 15px/22px $font-family;
 		text-transform: uppercase;
 		color: #000;
 		display: block;
@@ -161,15 +161,15 @@ ul.sf-menu li li li.sfHover ul {
 	> li {
 		> a {
 			text-transform: uppercase;
-			font: 600 16px/20px $font-custom;
+			font: 600 16px/20px $font-family;
 			color: #fff;
 			&:hover {
-				color: $primary-color;
+				color: $SB_yellow-background;
 			}
 		}
 		li{
 			font-weight:normal;
-			a:hover{color: $primary-color;}
+			a:hover{color: $SB_yellow-background;}
 		}
 	}
 }
@@ -224,7 +224,7 @@ ul.sf-menu li li li.sfHover ul {
 	display: none;
 	@media (max-width: $screen-xs-max) { // max 767px
 		display: block;
-		font: 600 18px/22px $font-custom;
+		font: 600 18px/22px $font-fat;
 		text-transform: uppercase;
 		color: #484848;
 		

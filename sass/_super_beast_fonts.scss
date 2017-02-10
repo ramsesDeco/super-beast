@@ -1,0 +1,17 @@
+@import '_super_beast_vars';
+
+@font-face {
+	font-family: $SB_font-light;
+	src: url('../fonts/super-beast/Dosis-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: $SB_font-bold;
+	src: url('../fonts/super-beast/Dosis-Bold.ttf') format('truetype');
+}
+
+
+@font-face {
+	font-family: $SB_font-headers;
+	src: url('../fonts/super-beast/High Tide Bold.ttf') format('truetype');
+}

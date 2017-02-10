@@ -1,10 +1,13 @@
 @import 'bootstrap_lib/_variables';
+@import '_super_beast_vars';
 
 //------- FONTS
-$font-family:				  		"Raleway", Helvetica, sans-serif;
-$font-fat:							'LemonMilk-Regular';
+
+
+$font-family:				  		$SB_font-light;
+$font-fat:							$SB_font-bold;
 $font:						  		normal 13px/18px $font-family;
-$font-custom:                 		'Raleway', sans-serif;
+$font-custom:                 		$SB_font-bold;
 $font-icon:                   		"FontAwesome";
 $fa-css-prefix:       				icon !default;
 
