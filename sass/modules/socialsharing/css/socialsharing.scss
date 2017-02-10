@@ -1,0 +1,27 @@
+.socialsharing_product button {
+	margin-bottom: 3px;
+	height:30px;
+	width:30px;
+	line-height:30px;
+	text-align:center;
+	padding:0px;
+	border-radius:30px;
+	
+	i{
+		&:before{
+			display:block;
+			height:30px;
+			width:30px;
+			line-height:30px;
+			text-align:center;
+			color:#bab7b7;
+		}
+	}
+	&:hover{
+		i{
+			&:before{
+				color:#fff;
+			}
+		}
+	}
+}

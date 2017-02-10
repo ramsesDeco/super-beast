@@ -1,0 +1,215 @@
+@import "compass";
+@import "theme_variables";
+#block_top_menu {
+	padding-top: 18px;
+	background: #fcd846;
+	padding-bottom: 18px;
+	@media (max-width: $screen-md) {
+				padding-top: 0px;
+				padding-bottom: 0px;
+			}
+			
+	@media (max-width:$screen-xs-max)
+	
+	{
+	padding-top: 0px;
+	
+	top: 60px;
+	left: 15px;
+	padding: 0px 0px 0px 0px;
+	}
+	
+	&.open{
+		
+		
+	}
+	.col-sm-7{padding-left:0px; padding-right:0px;}
+}
+
+/* STRUCTURE */
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+	&:active:before, &:focus:before, &:hover:before {
+		left: 0;
+		right: 0;
+	}
+	&:before{
+		content: "";
+		position: absolute;
+		z-index: -1;
+		left: 50%;
+		right: 50%;
+		bottom: 0;
+		background: #2098d1;
+		height: 4px;
+		-webkit-transition-property: left, right;
+		transition-property: left, right;
+		-webkit-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+		-webkit-transition-timing-function: ease-out;
+		transition-timing-function: ease-out;
+	}
+	
+}
+
+
+
+.hvr-sweep-to-bottom {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+	
+	&:active:before,&:focus:before, &:hover:before {
+		-webkit-transform: scaleY(1);
+		transform: scaleY(1);
+	}
+	&:before{
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: #2098d1;
+		-webkit-transform: scaleY(0);
+		transform: scaleY(0);
+		-webkit-transform-origin: 50% 0;
+		transform-origin: 50% 0;
+		-webkit-transition-property: transform;
+		transition-property: transform;
+		-webkit-transition-duration: .3s;
+		transition-duration: .3s;
+		-webkit-transition-timing-function: ease-out;
+		transition-timing-function: ease-out;
+		height:auto;
+	}
+}
+
+#nav-icon1{
+				display:block;
+				float:left;
+				width: 48px;
+				height: 18px;
+				position: relative;
+				margin: 0px auto;
+				-webkit-transform: rotate(0deg);
+				-moz-transform: rotate(0deg);
+				-o-transform: rotate(0deg);
+				transform: rotate(0deg);
+				-webkit-transition: .5s ease-in-out;
+				-moz-transition: .5s ease-in-out;
+				-o-transition: .5s ease-in-out;
+				transition: .5s ease-in-out;
+				cursor: pointer;
+				  
+				span {
+					display: block;
+					position: absolute;
+					height: 1px;
+					width: 100%;
+					background: $primary-color;
+					opacity: 1;
+					left: 0;
+					-webkit-transform: rotate(0deg);
+					-moz-transform: rotate(0deg);
+					-o-transform: rotate(0deg);
+					transform: rotate(0deg);
+					-webkit-transition: .25s ease-in-out;
+					-moz-transition: .25s ease-in-out;
+					-o-transition: .25s ease-in-out;
+					transition: .25s ease-in-out;
+					
+					&:nth-child(1) {
+						top: 0px;
+					}
+					&:nth-child(2) {
+						top: 6px;
+					}
+					&:nth-child(3) {
+						top: 12px;
+					}
+					
+				}
+				&.open{
+						span:nth-child(1) {
+							top: 18px;
+							-webkit-transform: rotate(135deg);
+							-moz-transform: rotate(135deg);
+							-o-transform: rotate(135deg);
+							transform: rotate(135deg);
+							background:#fff;
+						}
+
+						span:nth-child(2) {
+							opacity: 0;
+							left: -60px;
+							background:#fff;
+						}
+
+						span:nth-child(3) {
+							top: 17px;
+							-webkit-transform: rotate(-135deg);
+							-moz-transform: rotate(-135deg);
+							-o-transform: rotate(-135deg);
+							transform: rotate(-135deg);
+							background:#fff;
+						}
+					}
+				  
+				}
+				
+				.cat-title{clear:both; display:block; text-transform:uppercase; color:#fff;
+					&.open{
+						position: relative;
+						top: 20px;
+						left: 6px;
+					
+					}
+				}
+				
+				
+/* Desktop and Laptos */
+@media(max-width:$screen-lg){
+
+}
+
+/* IPAD LANDSCAPE */
+@media(max-width:$screen-md-max){
+
+}
+
+/* IPAD Portait */
+@media(max-width:$screen-sm-max){
+
+
+}
+
+/* PHONE LANDSCAPE */
+@media(max-width:$screen-xs-max){
+}
+
+
+/* PHONE PORTAIT */
+@media(max-width:$screen-xs){
+#block_top_menu{top:60px;}
+}				
