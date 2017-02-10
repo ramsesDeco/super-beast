@@ -14,10 +14,13 @@
 	div.current {
 		font-weight: bold;
 		padding: 8px 10px 10px 10px;
-		color: $light-text-color;
+		color: $SB_yellow--background;
 		text-shadow: 1px 1px rgba(0,0,0,0.2);
 		cursor: pointer;
 		line-height:18px;
+		&.active {
+			color: $light-text-color;
+		}
 		@media (max-width: $screen-xs - 1) {
 			text-align: center;
 			padding: 9px 5px 10px;
@@ -61,7 +64,6 @@
 		background: $dark-background;
 		z-index: 2;
 		li {
-			color: $light-text-color;
 			line-height: 35px;
 			font-size: 13px;
 			a,

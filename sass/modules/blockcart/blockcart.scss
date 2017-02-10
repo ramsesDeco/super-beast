@@ -80,7 +80,7 @@ right: 15px;
 			
 			font-size: 29px;
 			line-height: 18px;
-			color: $SB_yellow-background;
+			color: $SB_yellow--background;
 			padding-right: 39px;
 			background: $SB_button-car--background url("../../../img/cart.png") no-repeat;
 		}
@@ -222,7 +222,7 @@ right: 15px;
 				span {
 					padding: 7px 0;
 					font-size: 1.1em;
-					border: solid 2px $SB_yellow-background;
+					border: solid 2px $SB_yellow--background;
 					background: none;
 					text-transform:uppercase;
 					color:#fff;
@@ -250,7 +250,7 @@ right: 15px;
 		background: #111;
 		color: $light-text-color;
 		width: 300px;
-		border:solid 2px $SB_yellow-background;
+		border:solid 2px $SB_yellow--background;
 		@media (max-width: $screen-xs) {
 			width: 300px;
 		}

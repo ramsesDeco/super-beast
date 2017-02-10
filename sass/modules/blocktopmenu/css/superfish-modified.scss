@@ -31,7 +31,7 @@
 	position: absolute;
 	top: -999em;
 	background:#000;
-	border:solid 2px $SB_yellow-background;
+	border:solid 2px $SB_yellow--background;
 	@media (max-width: $screen-xs-max) { // max 767px
 		position: relative;
 	}
@@ -164,12 +164,12 @@ ul.sf-menu li li li.sfHover ul {
 			font: 600 16px/20px $font-family;
 			color: #fff;
 			&:hover {
-				color: $SB_yellow-background;
+				color: $SB_yellow--background;
 			}
 		}
 		li{
 			font-weight:normal;
-			a:hover{color: $SB_yellow-background;}
+			a:hover{color: $SB_yellow--background;}
 		}
 	}
 }

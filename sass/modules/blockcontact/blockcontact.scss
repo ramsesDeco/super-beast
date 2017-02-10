@@ -18,7 +18,7 @@
 		padding-right: 7px;
 	}
 	strong {
-		color: #9fa2a3;
+		color: $SB_yellow--background;
 		font-size:12px;
 	}
 	&.is_logged {
@@ -35,7 +35,7 @@
 	}
 	a {
 		display: block;
-		color: $yellow-background;
+		color: $SB_yellow--background;
 		text-transform: uppercase;
 		font-weight: bold;
 		font-size:12px;
