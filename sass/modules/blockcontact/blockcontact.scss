@@ -4,8 +4,10 @@
 	float: left;
 	padding: 5px 0 10px;
 	line-height:18px;
-	font-size:12px;
+	font-size: 0;
 	color:#9fa2a3;
+	padding-top: 6px;
+    padding-bottom: 4px;
 	@media (max-width: $screen-xs-max) {
 		display: none;
 	}
@@ -17,6 +19,7 @@
 	}
 	strong {
 		color: #9fa2a3;
+		font-size:12px;
 	}
 	&.is_logged {
 		@media (max-width: $screen-sm-max) {
