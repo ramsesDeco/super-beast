@@ -63,7 +63,6 @@ body{
 	}
 	}
 	&#index{
-		background:none;
 		background: $SB_black-dark--background;
 		.contcol{
 			background:none;
@@ -73,7 +72,7 @@ body{
 		}
 	}
 	&#category{
-		background:url(../img/productbg.jpg) repeat-x;
+		background:$SB_black_dark--background url(../img/productbg.jpg) repeat-x;
 		.contcol{
 			
 			&>.container{padding-top:0px;
@@ -246,7 +245,6 @@ label {
 	color: $base-title-color;
 	text-transform:uppercase;
 	font-size:12px;
-	font-family:arial;
 	font-weight:normal;
 	&.required {
 		&:before {
@@ -927,7 +925,7 @@ body#index #slider_row{
 			margin:0px;
 		}
 		a {
-			font: 600 14px/24px arial;
+			font: 600 14px/24px $font-family;
 			color: #333;
 			text-transform: uppercase;
 			border: none;
@@ -1798,6 +1796,9 @@ body#index{
 		background-color:#222;
 		@media (max-width: $screen-xs - 1) {
 			background-image:none;
+		}
+		h4 {
+			text-transform: uppercase;
 		}
 	}
 	#footer {
@@ -3566,13 +3567,14 @@ div.star.star_hover {
 	.whydeal{
 		text-align:center;
 		padding:50px 0;
-		p{font-size:16px; font-style:italic; line-height:25px; padding:20px 20%; color: $light-text-color; font-family:$font-custom;   
+		font-family:$font-family;
+		p{font-size:16px; line-height:25px; padding:0 20%; margin: 10px 0; color: $light-text-color; 
 			@media (max-width: $screen-xs-max) {
 				padding:20px 0;
 			}
 		}
 		strong { color: $light-text-color; }
-		h2{font-family:$font-fat; font-size:30px; padding:20px; margin:20px 0;}
+		h2{font-family:$font-fat; font-size:30px; padding:0 20px; margin:20px 0 10px;}
 		h3{font-family:$font-family; font-size:16px; text-shadow:none; font-weight:600; text-align:left;}
 		h4{font-family:$font-family; font-size:12px; font-weight:normal;  text-align:left;}
 		h1,h2,h3,h4,h5,h6 {color:$SB_yellow--background;}
@@ -3656,18 +3658,6 @@ p.submit2{clear:both; margin:15px 0 0 15px;}
 }
 
 
-@font-face {
-	font-family:$font-fat;
-src: url('../fonts/LemonMilk_gdi.eot');
-src: url('../fonts/LemonMilk_gdi.eot?#iefix') format('embedded-opentype'),
-url('../fonts/LemonMilk_gdi.woff') format('woff'),
-url('../fonts/LemonMilk_gdi.ttf') format('truetype'),
-url('../fonts/LemonMilk_gdi.svg#LemonMilk-Regular') format('svg');
-font-weight: 400;
-font-style: normal;
-font-stretch: normal;
-unicode-range: U+0020-20AC;
-}
 #editorial_block_center{display:none;}
 /* Desktop and Laptos */
 @media(max-width:$screen-lg){
