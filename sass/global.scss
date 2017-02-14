@@ -1807,30 +1807,25 @@ body#index{
 			& > section {
 				&:not(.bottom-footer) {
 					position: relative;
-					padding-right: 15px;
+
+
 					&:after {
 						content: '';
 						position: absolute;
 						top: 0;
 						bottom: 0;
-						border-right: 1px dashed $SB_yellow--background;
-
-						$position: 70%;
-						width: $position;
-						@media(max-width: $screen-md-max) and (min-width: $screen-sm-max){
-							width: $position + 5%;
-						}
-						@media(max-width: $screen-sm-max) and (min-width: $screen-xs-max){
-							width: $position + 15%;
-						}
+						right: 0;
+						border-left: 1px dashed $SB_yellow--background;
 					}
+
+				
 				}
 			}
 			@media (max-width: $screen-xs-max) {
 				display: block;
 				& > section {
 					&:after {
-						border-right: 0 !important;
+						border-left: 0 !important;
 					}
 				}
 			}
