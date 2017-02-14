@@ -134,6 +134,13 @@ ul.product_list {
 				display: none;
 			}
 		}
+		.new-box, .sale-box {
+			right: 0;
+			@media(max-width: 480px) {
+				right: initial;
+				margin-left: 90px;
+			}
+		}
 	}
 	.comments_note {
 		text-align: left;
@@ -225,11 +232,12 @@ ul.product_list.grid {
 		}
 		.product-container {
 			
-			background: #fff;
+			background: $SB_black_dark--background;
 			padding: 0;
 			position: relative;
 			display: block;
 			min-height: 400px;
+			color: $light-text-color;
 			@media (max-width: $screen-xs - 1) {
 				height:auto;
 			}
