@@ -156,7 +156,7 @@ right: 15px;
 		}
 		.quantity-formated {
 			display: inline-block;
-			color: #9c9b9b;
+			color: $light-text-color;
 			text-transform: uppercase;
 			font-size: 10px;
     		padding-right: 5px;
@@ -287,7 +287,7 @@ width: 300px;
 			padding-bottom: 10px;
 			font-size: 11px;
 			a {
-				color: #9c9b9b;
+				color: $light-text-color;
 				&:hover {
 					color: $light-text-color;
 				}
