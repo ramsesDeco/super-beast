@@ -8,20 +8,13 @@ $SB_font-headers:						'High-Tide-Bold';
 
 //--------- BACKGROUNDS
 $SB_yellow--background:					#ddb871;
-$SB_black_dark--background:					#000;
-$SB_black--background:					#25282a;
+$SB_black_dark--background:				#000;
+$SB_black--background:					#272727;
 
 
 //--------- COLORS
-// $primary-color:						#f0df53;
-// $base-body-color:                   #777;
-// $base-text-color:                   #333;
-// $base-heading-color:				#555454;
-// $base-title-color:					$base-text-color;
-// $light-text-color:                  #fff;
-// $link-color:						$link-color;
-// $link-hover-color:                  $link-hover-color;
-// $description-color:					#666;
+$link-color:							#fff;
+$link-hover-color:						darken($link-color, 25%);
 
 
 //--------- Indents

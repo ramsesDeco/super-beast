@@ -580,8 +580,8 @@ span.exclusive {
 }
 
 .button.ajax_add_to_cart_button {
-	font: 600 12px/21px $font-family;
-	color: #ff6d10;
+	font: 600 15px/21px $font-family;
+	color: $add-car-button-color;
 	text-transform: uppercase;
 	padding: 0;
 	border: 2px solid;
@@ -894,11 +894,11 @@ body#index #slider_row{
 }
 .contcol{background:#fff; clear:both; display:block; padding-top:0px;}
 //Homepage Tabs
-.hometabs{background: $SB_yellow--background; border-bottom:solid 1px $primary-color;}
+.hometabs{background: $SB_yellow--background;}
 #home-page-tabs {
 	border: none;
 	height:83px;
-	
+	position: relative;
 	// max 479px
 		@media (max-width: $screen-xs-max) {
 		padding:0px;
@@ -1799,6 +1799,41 @@ body#index{
 		}
 		h4 {
 			text-transform: uppercase;
+		}
+
+		.container .row {
+			display: flex;
+			// padding-top: 45px;
+			& > section {
+				&:not(.bottom-footer) {
+					position: relative;
+					padding-right: 15px;
+					&:after {
+						content: '';
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						border-right: 1px dashed $SB_yellow--background;
+
+						$position: 70%;
+						width: $position;
+						@media(max-width: $screen-md-max) and (min-width: $screen-sm-max){
+							width: $position + 5%;
+						}
+						@media(max-width: $screen-sm-max) and (min-width: $screen-xs-max){
+							width: $position + 15%;
+						}
+					}
+				}
+			}
+			@media (max-width: $screen-xs-max) {
+				display: block;
+				& > section {
+					&:after {
+						border-right: 0 !important;
+					}
+				}
+			}
 		}
 	}
 	#footer {
@@ -3682,7 +3717,7 @@ header .row #header_logo{width:50%;}
 .col-sm-4{width:100%;}
 
 #blocknewproducts li.col-sm-4{width:50%;}
-.button.ajax_add_to_cart_button:hover span{color: #ff6d10; text-transform: uppercase; text-decoration: underline;}
+.button.ajax_add_to_cart_button:hover span{color: $add-car-button-color; text-transform: uppercase; text-decoration: underline;}
 }
 
 
@@ -3694,5 +3729,5 @@ header .row #header_logo{width:50%;}
 header .row #header_logo{width:75%;}
 #blocknewproducts li.col-sm-4, {width:100%;}
 
-.button.ajax_add_to_cart_button:hover span{color: #ff6d10; text-transform: uppercase; text-decoration: underline;}
+.button.ajax_add_to_cart_button:hover span{color: $add-car-button-color; text-transform: uppercase; text-decoration: underline;}
 }
