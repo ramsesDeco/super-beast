@@ -46,13 +46,11 @@ a.fancybox-nav {
 		cursor: pointer;
 		padding: 5px;
 		border: 0px solid $product-image-border;
-		background: $light-background;
 		@media (max-width: $screen-xs-max) { //max 767px
 			width: 280px;
 			margin: 0 auto;
 		}
 		img {
-			background: $base-box-bg;
 			width: 100%;
 		}
 		#view_full_size {
@@ -69,7 +67,6 @@ a.fancybox-nav {
 				width: 136px;
 				text-align: center;
 				font-weight: 700;
-				background: rgba(255,255,255,0.5);
 				@include box-shadow(0 2px 8px rgba(0,0,0,0.16));
 				&:after{
 					font-family: $font-icon;
@@ -379,7 +376,7 @@ span.view_scroll_spacer {
 	h1 {
 		padding-bottom: 16px;
 		font-size: 30px;
-		color: $product-name-color;
+		color: $SB_yellow--background;
 		text-align:center;
 	}
 	p {
@@ -729,20 +726,16 @@ span.view_scroll_spacer {
 	border-bottom: $main_border;
 	width: 100%;
 	margin: 0 0 20px;
-	background: $light-background;
 	tr{
 		border-top: $main_border;
-		&.even{
-			background: $tr-even-bg;
-		}
+		border-left: $main_border;
+		border-right: $main_border;
+		
 		td{
 			padding: 10px 20px 11px;
-			&:first-child{
-				border-right: $main_border;
-				width: 30%;
-				font-weight: 700;
-				color: $base-text-color;
-			}
+			border-right: $main_border;
+			width: 30%;
+			color: $link-color;
 		}
 	}
 }
@@ -895,21 +888,19 @@ table.table-product-discounts{
 	display: none;
 }
 .our_price_display {
-	font-weight: 600;
-	font-size: 29px;
+	font-size: 25px;
 	line-height: 32px;
-	font-family: $font-custom;
-	color: $product-price-color;
+	font-family: $SB_font-light;
+	color: $link-color;
 	@media (max-width: $screen-sm-max) { //max 991px
 		font-size: 26px;
 		line-height: 28px;
 	}
 	.price {
-		font-weight: 300;
-		font-size: 35px;
+		font-size: 25px;
 		line-height: 32px;
-		font-family:$font-fat;
-		color: $product-price-color;
+		font-family:$SB_font-light;
+		color: $link-color;
 		@media (max-width: $screen-sm-max) { //max 991px
 			font-size: 26px;
 			line-height: 28px;
@@ -1188,7 +1179,7 @@ Quick View Styles
 
 .product_attributes{ padding:0px;
 	label{font-size:12px; font-family:arial; text-transform:uppercase; font-weight:normal; text-align:left;}
-	#attributes{background:#f5f5f5; margin-bottom:20px; padding:19px 19px 17px; }
+	#attributes{margin-bottom:20px; padding:19px 19px 17px; }
 }
 .addsharethisinner .stButton .stArrow {
 	display: none !important;

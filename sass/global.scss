@@ -52,7 +52,7 @@ body{
 		@media (max-width:$screen-xs-max){
 			padding-top:0px;
 		}
-		&>.row{background:#ffffff;
+		&>.row{background:$SB_black--background;
 			.center_column{padding-top:50px; min-height:500px;
 			@media(max-width:$screen-xs-max){
 				padding-left:30px;
@@ -1151,10 +1151,9 @@ body#index #slider_row{
 }
 
 h3.page-product-heading {
-	font-family:$font-family;
+	font-family:$SB_font-bold;
 	font-size:30px;
-	color:#333;
-	font-weight:600;
+	color: $SB_yellow--background;
 }
 
 // BLOCK .footer_links (cms pages)
@@ -1633,10 +1632,9 @@ div.star a:hover {
 
 #page .rte {
 	background: transparent none repeat scroll 0 0;
-
-	em {
-		font-style: italic !important;
-	}
+	font-family: $SB_font-light;
+	color: $link-color;
+	
 }
 
 .listcomment {
