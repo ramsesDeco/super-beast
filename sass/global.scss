@@ -1812,6 +1812,9 @@ body#index{
 	}
 	.container {
 		padding-bottom: 75px;
+		@media (max-width: $screen-xs-max) { // max 767px
+			padding-bottom: 50px;
+		}
 	}
 	.foootercontent{
 		padding-top: 30px;
@@ -3633,6 +3636,9 @@ div.star.star_hover {
 	.whydeal{
 		text-align:center;
 		padding:130px 0 0;
+		@media (max-width: $screen-xs-max) { // max 767px
+			padding-top: 50px;
+		}
 		font-family:$font-family;
 		p{font-size:16px; line-height:25px; padding:0 20%; margin: 10px 0; color: $light-text-color; 
 			@media (max-width: $screen-xs-max) {
