@@ -410,6 +410,7 @@ span.exclusive {
 		padding: 3px 8px 3px 8px;
 		border: 1px solid;
 		border-color: #ccc;
+		color: #fff;
 		i {
 			vertical-align: 0px;
 			margin-right: 5px;
@@ -443,7 +444,7 @@ span.exclusive {
 		border-color: #7cc576;
 		text-transform:uppercase;
 		font-weight:normal;
-		color:#333;
+		color:#fff;
 		font-size:14px;
 		font-family:$font-family;
 		// max 480px
@@ -1632,8 +1633,6 @@ div.star a:hover {
 
 #page .rte {
 	background: transparent none repeat scroll 0 0;
-	font-family: $SB_font-light;
-	color: $link-color;
 	
 }
 
