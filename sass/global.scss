@@ -1666,7 +1666,7 @@ div.star a:hover {
 .header-container {
 	position:relative;
 	width:100%;
-	top:0px; left:0px; background: #25282a;
+	top:0px; left:0px; background: $SB_black--background;
 	@media (max-width:$screen-xs-max){
 		position:static;
 		background:#222;
@@ -1781,7 +1781,31 @@ body#index{
 
 // FOOTER
 .footer-container {
-	
+	.footer-aditional-info{
+		padding-top: 18px;
+		.payment-methods {
+			color: $SB_yellow--background;
+			font-size: 30px;
+			.visa--icon {
+				&:before {
+					font-family: $font-icon;
+					content: $fa-var-cc-visa;
+				}
+			}
+			.mastercard--icon {
+				&:before {
+					font-family: $font-icon;
+					content: $fa-var-cc-mastercard;
+				}
+			}
+			.paypal--icon {
+				&:before {
+					font-family: $font-icon;
+					content: $fa-var-cc-paypal;
+				}
+			}
+		}
+	}
 	// min 768px
 	@media (min-width: $screen-sm) {
 		
@@ -1793,7 +1817,7 @@ body#index{
 		
 		background-repeat:repeat,no-repeat;
 		background-size:100% 100%, 100% auto;
-		background-color:#222;
+		background-color: $SB_black_dark--background;
 		@media (max-width: $screen-xs - 1) {
 			background-image:none;
 		}
@@ -1833,7 +1857,10 @@ body#index{
 	}
 	#footer {
 		color: #fff;
-		background: $SB_black--background;
+		background: $SB_black_dark--background;
+		.container:first-child {
+			padding-bottom: 0;
+		}
 		.row {
 			position: relative;
 		}
@@ -1974,7 +2001,7 @@ body#index{
 							font-weight: normal;
 							-webkit-font-smoothing: antialiased;
 							-moz-osx-font-smoothing: grayscale;
-							color:#fff;
+							color: $SB_yellow--background;
 						}
 						&:hover {
 							color: $light-text-color;
@@ -2061,7 +2088,9 @@ body#index{
 				padding: 15px 0 0 0;
 				border-top: 0px solid #515151;
 				width: 100%;
+				padding-left: 154px;
 			}
+
 		}
 	}
 }

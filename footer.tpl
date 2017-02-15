@@ -38,6 +38,8 @@
 				<div class="footer-container">
 					<footer id="footer">
 						{$HOOK_FOOTER}
+
+						{include file="$tpl_dir./footer-aditional-info.tpl"}
 					</footer>
 				</div><!-- #footer -->
 			{/if}
