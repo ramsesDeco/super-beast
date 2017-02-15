@@ -1811,10 +1811,10 @@ body#index{
 		
 	}
 	.container {
-		padding-bottom: 100px;
+		padding-bottom: 75px;
 	}
 	.foootercontent{
-		
+		padding-top: 30px;
 		background-repeat:repeat,no-repeat;
 		background-size:100% 100%, 100% auto;
 		background-color: $SB_black_dark--background;
@@ -1886,7 +1886,7 @@ body#index{
 		h4 {
 			font: 600 18px / 22px $font-custom;
 			color: $primary-color;
-			margin: 0 0 13px 0;
+			margin: 0 0 4px 0;
 			cursor: pointer;
 			// max 767px
 			@media (max-width: $screen-xs-max) {
@@ -1911,7 +1911,7 @@ body#index{
 		}
 		ul {
 			li {
-				padding-bottom: 8px;
+				padding-bottom: 5px;
 				a {
 					font-weight: normal;
 					text-shadow: none;
@@ -1921,8 +1921,15 @@ body#index{
 			}
 		}
 		#block_contact_infos {
-			h5{text-transform:uppercase; font-size:18px; }
-			address{font-size:14px; }
+			h5{
+				// font-size:18px;
+				font-size: inherit;
+				margin-top: 0 !important;
+			}
+			address{
+				// font-size:14px;
+				margin-bottom: 5px;
+			}
 			// max 767px
 			@media (max-width: $screen-xs-max) {
 				border: none;
@@ -1937,21 +1944,21 @@ body#index{
 					li {
 						padding: 0 0 7px 4px;
 						overflow: hidden;
-						line-height: 30px;
+						// line-height: 30px;
 						> span,
 						> span a {
 							color: $primary-color;
 							font-weight: normal;
 						}
 						i {
-							font-size: 20px;
-							width: 32px;
+							font-size: 15px;
+							width: 22px;
 							text-align: center;
-							padding-right: 12px;
+							padding-right: 5px;
 							float: left;
 							color: #fff;
 							position:relative;
-							top:5px;
+							top:4px;
 						}
 					}
 				}
@@ -3625,7 +3632,7 @@ div.star.star_hover {
 	}
 	.whydeal{
 		text-align:center;
-		padding:50px 0;
+		padding:130px 0 0;
 		font-family:$font-family;
 		p{font-size:16px; line-height:25px; padding:0 20%; margin: 10px 0; color: $light-text-color; 
 			@media (max-width: $screen-xs-max) {
